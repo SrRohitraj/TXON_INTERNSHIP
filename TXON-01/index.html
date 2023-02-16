@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width initial-scale">
+        <title>TXON-TASK-01</title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="icon" href="img/basketball.png" type="image/css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <div>
+                        <img src="img/79.png" alt="logo">
+                    </div>
+                        <h1><a href="Basket Ninja" dowmload>Basket <span>Ninja</span></a>
+                    </h1>
+                </div>
+                <div class="menu">
+                    <a href="#Home">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Our Program</a>
+                    <a href="#contact">Join</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="icon">
+                    <img src="img/fb.png" alt="icon">
+                    <img src="img/ig.png" alt="icon">
+                    <img src="img/tw.png" alt="icon">
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="Home">
+                <h2>Welcome to <span id="typing">Basket Ninja.</span>
+                    <span class="typed-cursor typed-cursor--blink" aria-hidden="true">
+                    </span>
+                </h2>
+                <img src="img/images.jpeg" alt="picture" width="250">
+                <p>We offer men's and coed basketball leagues with levels varying from recreational to competitive. We play at multiple locations all over the city, whether you are looking to explore your skill or find one in your local neighborhood we have you covered </p>
+            </section>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+                    var typed = new Typed('#typing', {
+                        strings: ["Basket", "Ninja"],
+                        typeSpeed: 200,
+                        backSpeed:200,
+                        loop:true
+                      });
+            </script>
+            <style type="text/css" data-typed-js-css="true">
+                        .typed-cursor{
+                          opacity: 1;
+                        }
+                        .typed-cursor.typed-cursor--blink{
+                          animation: typedjsBlink 0.7s infinite;
+                          -webkit-animation: typedjsBlink 0.7s infinite;
+                                  animation: typedjsBlink 0.7s infinite;
+                        }
+                        @keyframes typedjsBlink{
+                          50% { opacity: 0.0; }
+                        }
+                        @-webkit-keyframes typedjsBlink{
+                          0% { opacity: 1; }
+                          50% { opacity: 0.0; }
+                          100% { opacity: 1; }
+                        }
+            </style>
+            
+            <article id="contact">
+                <div class="contact">
+                    
+                <fieldset>
+                 <legend>
+                     <highlight>Book you place</highlight>
+                 </legend>
+                 <br>
+                 <form action="https://" method="get">
+                     <label for="first_Name">&nbsp;&nbsp;First Name:</label>
+                     <input type="text" name="first_name" id="first_name" autocomplete="on" placeholder="xyz" autofocus required>
+                     <label for="last_name">&nbsp;&nbsp;Last Name:</label>
+                     <input type="text" name="last_name" id="last_name" autocomplete="on" placeholder="rst" required>
+                     <label for="phone">&nbsp;&nbsp;Phone No.</label>
+                     <input type="tel" name="phone" id="phone" placeholder="+-99-999-999-9999" pattern="+[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                     <br><input type="submit" value="">
+                     <button type="submit"><b>Submit</b></button>
+                     <button type="reset"><b>Reset</b></button>
+                 </form>
+                </fieldset>
+            </div>
+            </article>
+        </main>
+        <hr>
+        <footer>
+            &lt;&lt; &copy; copywrite &gt;&gt;
+        </footer>
+        
+    </body>
+</html>
